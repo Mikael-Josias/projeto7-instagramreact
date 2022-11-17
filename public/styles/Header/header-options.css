@@ -1,0 +1,7 @@
+
+.header__options{
+    display: flex;
+    justify-content: space-between;
+
+    width: 14.8rem;
+}
