@@ -1,108 +1,22 @@
+import Story from "./Story";
+
 export default function Stories() {
+
+  let stories = [
+    {name: "9gag", img: "./assets/imgs/9gag.png"},
+    {name: "meowed", img: "./assets/imgs/meowed.png"},
+    {name: "barked", img: "./assets/imgs/barked.png"},
+    {name: "nathanwpyle...", img: "./assets/imgs/nathanwpylestrangeplanet.png"},
+    {name: "wawawiwac...", img: "./assets/imgs/wawawiwa.png"},
+    {name: "respondeai", img: "./assets/imgs/respondeai.png"},
+    {name: "filomoderna", img: "./assets/imgs/filomoderna.jpg"},
+    {name: "memeriago.", img: "./assets/imgs/memeriagourmet.png"},
+  ];
+
   return (
     <div class="stories">
-      <div class="stories__card">
-        <a href="#Storie">
-          <div>
-            <img
-              class="stories__card__imagem"
-              src="./assets/imgs/9gag.png"
-              alt="Logo 9gag"/>
-          </div>
-          <p class="stories__card__nome">9gag</p>
-        </a>
-      </div>
-
-      <div class="stories__card">
-        <a href="#Storie">
-          <div>
-            <img
-              class="stories__card__imagem"
-              src="./assets/imgs/meowed.png"
-              alt="Logo meowed"
-            />
-          </div>
-          <p class="stories__card__nome">meowed</p>
-        </a>
-      </div>
-
-      <div class="stories__card">
-        <a href="#Storie">
-          <div>
-            <img
-              class="stories__card__imagem"
-              src="./assets/imgs/barked.png"
-              alt="Logo barked"
-            />
-          </div>
-          <p class="stories__card__nome">barked</p>
-        </a>
-      </div>
-
-      <div class="stories__card">
-        <a href="#Storie">
-          <div>
-            <img
-              class="stories__card__imagem"
-              src="./assets/imgs/nathanwpylestrangeplanet.png"
-              alt="Logo nathanwpylestrangeplanet"
-            />
-          </div>
-          <p class="stories__card__nome">nathanwpyle...</p>
-        </a>
-      </div>
-
-      <div class="stories__card">
-        <a href="#Storie">
-          <div>
-            <img
-              class="stories__card__imagem"
-              src="./assets/imgs/wawawiwa.png"
-              alt="Logo wawawiwa"
-            />
-          </div>
-          <p class="stories__card__nome">wawawiwac...</p>
-        </a>
-      </div>
-
-      <div class="stories__card">
-        <a href="#Storie">
-          <div>
-            <img
-              class="stories__card__imagem"
-              src="./assets/imgs/respondeai.png"
-              alt="Logo responde ai"
-            />
-          </div>
-          <p class="stories__card__nome">respondeai</p>
-        </a>
-      </div>
-
-      <div class="stories__card">
-        <a href="#Storie">
-          <div>
-            <img
-              class="stories__card__imagem"
-              src="./assets/imgs/filomoderna.jpg"
-              alt="Logo filosofia moderna"
-            />
-          </div>
-          <p class="stories__card__nome">filomoderna</p>
-        </a>
-      </div>
-
-      <div class="stories__card">
-        <a href="#Storie">
-          <div>
-            <img
-              class="stories__card__imagem"
-              src="./assets/imgs/memeriagourmet.png"
-              alt="Logo memeria gourmet"
-            />
-          </div>
-          <p class="stories__card__nome">memeriago.</p>
-        </a>
-      </div>
+      
+      {stories.map(s => <Story name={s.name} img={s.img} />)}
 
       <div class="stories__proximo">
         <a href="#ProximosStories">
