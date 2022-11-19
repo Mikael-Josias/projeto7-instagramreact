@@ -1,0 +1,10 @@
+
+.sidebar__sobre{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--texto-sobre);
+}
+
+.sidebar__sobre p{
+    padding: 9px 0;
+}

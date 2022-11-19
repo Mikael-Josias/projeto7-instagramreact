@@ -1,0 +1,36 @@
+
+.sidebar__sugestoes__perfil__detalhes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar__sugestoes__perfil__detalhes > img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+}
+
+.sidebar__sugestoes__perfil__detalhes div{
+    padding-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 3.2rem;
+}
+
+.sidebar__sugestoes__perfil__detalhes div a{
+    text-decoration: none;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    color: var(--texto-cinza-escuro);
+}
+
+.sidebar__sugestoes__perfil__detalhes div p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--texto-cinza-claro);
+}

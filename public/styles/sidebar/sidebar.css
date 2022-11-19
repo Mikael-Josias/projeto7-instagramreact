@@ -1,0 +1,13 @@
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 2.3rem;
+
+    position: fixed;
+    top: 8.8rem;
+
+    width: 29.3rem;
+}

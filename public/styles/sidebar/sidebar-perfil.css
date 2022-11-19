@@ -1,0 +1,27 @@
+
+.sidebar__perfil{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 2.4rem;
+}
+
+.sidebar__perfil > div{
+    padding-left: 1.7rem;
+}
+
+.sidebar__perfil > div a{
+    text-decoration: none;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    
+    color: var(--texto-cinza-escuro);
+}
+
+.sidebar__perfil > div p{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--texto-cinza-claro);
+}

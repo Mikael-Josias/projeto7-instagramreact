@@ -1,0 +1,32 @@
+
+.sidebar__sugestoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.sidebar__sugestoes > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 1.7rem;
+    width: 100%;
+}
+
+.sidebar__sugestoes > div:nth-child(1) p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--texto-cinza-claro);
+}
+
+.sidebar__sugestoes > div:nth-child(1) a{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--texto-cinza-escuro);
+
+    cursor: pointer;
+}
