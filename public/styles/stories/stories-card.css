@@ -1,0 +1,37 @@
+.stories__card {
+    flex-shrink: 0;
+  
+    margin: 0 9px;
+  
+    height: 8.7rem;
+    width: 6.6rem;
+  }
+  
+  .stories__card > a {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: space-between;
+    align-items: center;
+  
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--texto-cinza-escuro);
+  
+    height: 100%;
+    width: 100%;
+  }
+  
+  .stories__card > a div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 6.6rem;
+    width: 6.6rem;
+    border-radius: 50%;
+  
+    background-image: url("../../img/stories_background.jpg");
+    background-size: contain;
+  }
+  
