@@ -1,0 +1,38 @@
+.posts__card__comentarios {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+  
+  .posts__card__comentarios div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    width: 100%;
+  
+    margin-bottom: 1.5rem;
+  }
+  
+  .posts__card__comentarios img {
+    width: 2rem;
+    border-radius: 50%;
+  }
+  
+  .posts__card__comentarios p {
+    font-size: 1.4rem;
+    color: black;
+  
+    padding-left: 0.5rem;
+  }
+  
+  .posts__card__comentarios a {
+    text-decoration: none;
+  
+    font-weight: 500;
+    color: black;
+  
+    cursor: pointer;
+  }

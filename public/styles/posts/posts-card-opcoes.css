@@ -1,0 +1,12 @@
+
+.posts__card__opcoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem;
+}
+
+.posts__card__opcoes div > a{
+    padding-right: 1.5rem;
+}

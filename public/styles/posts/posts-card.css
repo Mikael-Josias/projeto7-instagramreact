@@ -1,0 +1,21 @@
+
+.posts__card{
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    border: .1rem solid var(--borda-cinza);
+    border-radius: .3rem;
+
+    margin-bottom: 6rem;
+    width: 100%;
+}
+
+.posts__card > img{
+    width: 100%;
+}
+
+.posts__card > video{
+    width: 100%;
+    
+}

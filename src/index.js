@@ -2,6 +2,7 @@ import reactDom from "react-dom";
 
 import Header from "./components/Header";
 import Stories from "./components/Stories";
+import Posts from "./components/Posts";
 
 const root = document.querySelector(".root");
 
@@ -10,7 +11,13 @@ function Cabecalho() {
     <>
       <Header />
       <div className="conteudo">
-        <Stories />
+        <div className="conteudo__principal">
+          <Stories />
+          <Posts />
+        </div>
+        <div className="conteudo__secundario">
+
+        </div>
       </div>
     </>
   );
