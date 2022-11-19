@@ -67,3 +67,29 @@ body {
 .comentarios > div ion-icon {
   font-size: 1.4rem;
 }
+
+
+.conteudo{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin: 3.4rem auto 0 auto;
+  width: 93.5rem;
+}
+
+
+.conteudo__principal{
+  display: flex;
+  flex-direction: column;
+
+  width: 61.4rem;
+}
+
+
+.conteudo__secundario{
+  display: flex;
+  flex-direction: column;
+
+  width: 29.3rem;
+}

@@ -9,7 +9,9 @@ function Cabecalho() {
   return (
     <>
       <Header />
-      <Stories />
+      <div className="conteudo">
+        <Stories />
+      </div>
     </>
   );
 }
