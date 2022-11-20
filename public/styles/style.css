@@ -37,6 +37,11 @@ body {
   color: red;
 }
 
+.icon--filled--bk {
+  font-size: 2.2rem;
+  color: black;
+}
+
 .linha-vertical {
   margin: 0 1.1rem;
   border: 0.1rem solid var(--borda-cinza);

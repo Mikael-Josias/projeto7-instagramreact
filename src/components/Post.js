@@ -2,8 +2,10 @@ import React from "react";
 
 export default function Post(props) {
   let content = "";
+  let [userImg, setUserImg] = React.useState(props.user.userImg);
   let [liked, setLiked] = React.useState(props.likes.likedByYou);
   let [numLikes, setNumLikes] = React.useState(props.likes.numLikes);
+  let [postSaved, setPostSaved] = React.useState(false);
 
   if (
     props.postContent.substr(props.postContent.length - 3) === "mp4" ||
@@ -16,6 +18,10 @@ export default function Post(props) {
     );
   } else {
     content = <img src={props.postContent} />;
+  }
+
+  function changeUserImg(){
+	
   }
 
   function setLike() {
@@ -32,11 +38,15 @@ export default function Post(props) {
     setNumLikes(num.toLocaleString("pt-BR"));
   }
 
+  function setSaved(){
+	setPostSaved(postSaved? false : true);
+  }
+
   return (
     <div class="posts__card">
       <div class="posts__card__cabecalho">
         <div>
-          <img src={props.user.userImg} alt="Logo meowed" />
+          <img src={userImg} alt="Logo meowed" />
           <a href="#Meowed">{props.user.userName}</a>
         </div>
 
@@ -63,8 +73,8 @@ export default function Post(props) {
           </a>
         </div>
 
-        <a href="#Marcar">
-          <ion-icon class="icon" name="bookmark-outline"></ion-icon>
+        <a href="#Marcar" onClick={setSaved}>
+          {<ion-icon class={!postSaved? "icon md hydrated" : "icon--filled--bk md hydrated"} name={!postSaved? "bookmark-outline" : "bookmark"}></ion-icon>}
         </a>
       </div>
 
