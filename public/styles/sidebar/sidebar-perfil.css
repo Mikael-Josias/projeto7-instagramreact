@@ -25,3 +25,8 @@
     font-weight: 300;
     color: var(--texto-cinza-claro);
 }
+
+.sidebar__perfil > img{
+    width: 5.6rem;
+    border-radius: 100%;
+}

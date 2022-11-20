@@ -2,7 +2,6 @@ import React from "react";
 
 export default function Post(props) {
   let content = "";
-  let [userImg, setUserImg] = React.useState(props.user.userImg);
   let [liked, setLiked] = React.useState(props.likes.likedByYou);
   let [numLikes, setNumLikes] = React.useState(props.likes.numLikes);
   let [postSaved, setPostSaved] = React.useState(false);
@@ -18,10 +17,6 @@ export default function Post(props) {
     );
   } else {
     content = <img src={props.postContent} />;
-  }
-
-  function changeUserImg(){
-	
   }
 
   function setLike() {
@@ -46,7 +41,7 @@ export default function Post(props) {
     <div class="posts__card">
       <div class="posts__card__cabecalho">
         <div>
-          <img src={userImg} alt="Logo meowed" />
+          <img src={props.user.userImg} alt="Logo meowed" />
           <a href="#Meowed">{props.user.userName}</a>
         </div>
 
