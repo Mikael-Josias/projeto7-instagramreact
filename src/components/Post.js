@@ -11,21 +11,21 @@ export default function Post(props) {
     props.postContent.substr(props.postContent.length - 3) === "ogv"
   ) {
     content = (
-      <video controls autoplay muted loop>
+      <video controls autoplay muted loop onDoubleClick={setLike}>
         <source src={props.postContent} type="video/mp4" />
       </video>
     );
   } else {
-    content = <img src={props.postContent} />;
+    content = <img src={props.postContent} onDoubleClick={setLike}/>;
   }
 
-  function setLike() {
+  function setLike(event) {
     let num = Number(String(numLikes).replace(".", ""));
 
-    if (liked) {
+    if (liked && event.type !== "dblclick") {
       num -= 1;
       setLiked(false);
-    } else {
+    } else{
       num += 1;
       setLiked(true);
     }
