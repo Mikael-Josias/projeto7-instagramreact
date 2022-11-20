@@ -28,5 +28,6 @@
 
 .sidebar__perfil > img{
     width: 5.6rem;
+    height: 5.6rem;
     border-radius: 100%;
 }
