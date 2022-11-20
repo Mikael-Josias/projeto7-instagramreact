@@ -4,10 +4,6 @@ import Usuario from "./Usuario";
 
 export default function Sidebar() {
 
-  let sugestoes = [
-    {img: "./assets/imgs/badvibesmemes.png", name: "bad.vibes.memes"},
-  ];
-
   return (
     <div class="sidebar">
       <Usuario/>

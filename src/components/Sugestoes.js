@@ -1,4 +1,14 @@
+import Sugestao from "./Sugestao";
+
 export default function Sugestoes() {
+  let sugestoes = [
+    { img: "./assets/imgs/badvibesmemes.png", name: "bad.vibes.memes", follow: false},
+    { img: "./assets/imgs/chibirdart.png", name: "chibirdart", follow: false},
+    { img: "./assets/imgs/razoesparaacreditar.png", name: "razoesparaacreditar", follow: false},
+    { img: "./assets/imgs/adorableanimals.png", name: "adorable_animals", follow: false},
+    { img: "./assets/imgs/smallcutecats.png", name: "smallcutecats", follow: false},
+  ];
+
   return (
     <div class="sidebar__sugestoes">
       <div>
@@ -6,74 +16,8 @@ export default function Sugestoes() {
         <a>Ver tudo</a>
       </div>
 
-      <div class="sidebar__sugestoes__perfil">
-        <div class="sidebar__sugestoes__perfil__detalhes">
-          <img src="" alt="Logo Bad vibe memes" />
-          <div>
-            <a href="#Badvibesmeme"></a>
-            <p>Segue você</p>
-          </div>
-        </div>
+      {sugestoes.map(s => <Sugestao img={s.img} name={s.name} />)}
 
-        <a href="#Seguir">Seguir</a>
-      </div>
-
-      <div class="sidebar__sugestoes__perfil">
-        <div class="sidebar__sugestoes__perfil__detalhes">
-          <img src="./assets/imgs/chibirdart.png" alt="Logo chibirdart" />
-          <div>
-            <a href="#Badvibesmeme">chibirdart</a>
-            <p>Segue você</p>
-          </div>
-        </div>
-
-        <a href="#Seguir">Seguir</a>
-      </div>
-
-      <div class="sidebar__sugestoes__perfil">
-        <div class="sidebar__sugestoes__perfil__detalhes">
-          <img
-            src="./assets/imgs/razoesparaacreditar.png"
-            alt="Logo razões para acreditar"
-          />
-          <div>
-            <a href="#Badvibesmeme">razoesparaacreditar</a>
-            <p>Novo no Instagram</p>
-          </div>
-        </div>
-
-        <a href="#Seguir">Seguir</a>
-      </div>
-
-      <div class="sidebar__sugestoes__perfil">
-        <div class="sidebar__sugestoes__perfil__detalhes">
-          <img
-            src="./assets/imgs/adorableanimals.png"
-            alt="Logo adorable animals"
-          />
-          <div>
-            <a href="#Badvibesmeme">adorable_animals</a>
-            <p>Segue você</p>
-          </div>
-        </div>
-
-        <a href="#Seguir">Seguir</a>
-      </div>
-
-      <div class="sidebar__sugestoes__perfil">
-        <div class="sidebar__sugestoes__perfil__detalhes">
-          <img
-            src="./assets/imgs/smallcutecats.png"
-            alt="Logo small cute cats"
-          />
-          <div>
-            <a href="#Badvibesmeme">smallcutecats</a>
-            <p>Segue você</p>
-          </div>
-        </div>
-
-        <a href="#Seguir">Seguir</a>
-      </div>
     </div>
   );
 }
