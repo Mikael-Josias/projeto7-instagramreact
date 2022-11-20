@@ -48,7 +48,12 @@ export default function Post(props) {
       <div class="posts__card__opcoes">
         <div>
           <a href="#Gostei" onClick={setLike}>
-            <ion-icon class="icon" name="heart-outline"></ion-icon>
+            {
+              <ion-icon
+                class={!liked ? "icon md hydrated" : "icon--filled md hydrated"}
+                name={!liked ? "heart-outline" : "heart"}
+              ></ion-icon>
+            }
           </a>
           <a href="#Comentar">
             <ion-icon class="icon" name="chatbubble-outline"></ion-icon>
