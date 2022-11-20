@@ -1,6 +1,8 @@
+import React from "react";
 import Post from "./Post";
 
 export default function Posts() {
+
   let posts = [
     {
       user: { userImg: "./assets/imgs/meowed.png", userName: "meowed" },
