@@ -34,13 +34,13 @@ export default function Usuario(props) {
   }
 
   return (
-    <div class="sidebar__perfil">
-      <img src={userImg} onClick={changeUserImg} />
+    <div class="sidebar__perfil" data-test="user">
+      <img src={userImg} onClick={changeUserImg} data-test="profile-image"/>
       <div>
         <a href="#CatanaComics">catanacomics</a>
-        <p>
+        <p data-test="name">
           {userName}{" "}
-          <ion-icon name="pencil" onClick={changeUserName}></ion-icon>
+          <ion-icon name="pencil" onClick={changeUserName} data-test="edit-name"></ion-icon>
         </p>
       </div>
     </div>

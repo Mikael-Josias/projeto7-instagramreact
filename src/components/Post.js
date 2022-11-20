@@ -11,12 +11,12 @@ export default function Post(props) {
     props.postContent.substr(props.postContent.length - 3) === "ogv"
   ) {
     content = (
-      <video controls autoplay muted loop onDoubleClick={setLike}>
+      <video controls autoplay muted loop onDoubleClick={setLike} data-test="post-image">
         <source src={props.postContent} type="video/mp4" />
       </video>
     );
   } else {
-    content = <img src={props.postContent} onDoubleClick={setLike}/>;
+    content = <img src={props.postContent} onDoubleClick={setLike} data-test="post-image"/>;
   }
 
   function setLike(event) {
@@ -38,7 +38,7 @@ export default function Post(props) {
   }
 
   return (
-    <div class="posts__card">
+    <div class="posts__card" data-test="post">
       <div class="posts__card__cabecalho">
         <div>
           <img src={props.user.userImg} alt="Logo meowed" />
@@ -52,7 +52,7 @@ export default function Post(props) {
 
       <div class="posts__card__opcoes">
         <div>
-          <a href="#Gostei" onClick={setLike}>
+          <a href="#Gostei" onClick={setLike} data-test="like-post">
             {
               <ion-icon
                 class={!liked ? "icon md hydrated" : "icon--filled md hydrated"}
@@ -68,7 +68,7 @@ export default function Post(props) {
           </a>
         </div>
 
-        <a href="#Marcar" onClick={setSaved}>
+        <a href="#Marcar" onClick={setSaved} data-test="save-post">
           {<ion-icon class={!postSaved? "icon md hydrated" : "icon--filled--bk md hydrated"} name={!postSaved? "bookmark-outline" : "bookmark"}></ion-icon>}
         </a>
       </div>
@@ -77,7 +77,7 @@ export default function Post(props) {
         <img src={props.likes.likedByImg} alt="Logo responde ai" />
         <p>
           Curtido por <a href="#RespondeAi">{props.likes.likedByName}</a> e
-          <a href="#Pessoas">outras {numLikes} pessoas</a>
+          <a href="#Pessoas"> outras <span data-test="likes-number">{numLikes}</span> pessoas</a>
         </p>
       </div>
     </div>
